@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	  <groups>
+		  <run>
+			  <include name="Regression"></include>
+		  </run>
+	  </groups>
+    <classes>
+      <class name="com.capstone.testcases.EndToEndTest"/>
+      <class name="com.capstone.testcases.AccountPageTest"/>
+      <class name="com.capstone.testcases.SearchResultsPageTest"/>
+      <class name="com.capstone.testcases.LoginPageTest"/>
+      <class name="com.capstone.testcases.HomePageTest"/>
+      <class name="com.capstone.testcases.AddToCartPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
