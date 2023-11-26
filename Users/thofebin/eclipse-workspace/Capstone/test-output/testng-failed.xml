@@ -16,24 +16,14 @@
           <include name="afterSuite"/>
         </methods>
       </class> <!-- com.capstone.testcases.SearchResultsPageTest -->
-      <class name="com.capstone.testcases.AddToCartPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="addToCartTest"/>
-          <include name="setup"/>
-          <include name="loadConfig"/>
-          <include name="beforeSuite"/>
-          <include name="afterSuite"/>
-        </methods>
-      </class> <!-- com.capstone.testcases.AddToCartPageTest -->
       <class name="com.capstone.testcases.LoginPageTest">
         <methods>
           <include name="setup"/>
           <include name="loadConfig"/>
           <include name="loginTest" invocation-numbers="1"/>
           <include name="beforeSuite"/>
-          <include name="tearDown"/>
           <include name="afterSuite"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.capstone.testcases.LoginPageTest -->
     </classes>

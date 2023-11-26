@@ -26,8 +26,14 @@ public class AddToCartPageTest  extends BaseClass{
 	public void addToCartTest() {
 		searchResultsPage =homePage.searchProduct("mens shirts");
 		addToCartpage =searchResultsPage.clickOnProduct();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		addToCartpage.enterQuantity("1");
-		addToCartpage.selectSize();
+		//addToCartpage.selectSize();
 		try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {

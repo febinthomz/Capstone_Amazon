@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.capstone.testcases.EndToEndTest">
+      <class name="com.capstone.testcases.AddToCartPageTest">
         <methods>
-          <include name="endToEndTest"/>
-          <include name="setup"/>
           <include name="tearDown"/>
+          <include name="addToCartTest"/>
+          <include name="setup"/>
           <include name="loadConfig"/>
           <include name="beforeSuite"/>
           <include name="afterSuite"/>
         </methods>
-      </class> <!-- com.capstone.testcases.EndToEndTest -->
+      </class> <!-- com.capstone.testcases.AddToCartPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
