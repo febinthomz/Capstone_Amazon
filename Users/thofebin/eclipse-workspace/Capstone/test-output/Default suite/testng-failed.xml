@@ -10,6 +10,7 @@
           <include name="tearDown"/>
           <include name="loadConfig"/>
           <include name="beforeSuite"/>
+          <include name="afterSuite"/>
         </methods>
       </class> <!-- com.capstone.testcases.EndToEndTest -->
     </classes>

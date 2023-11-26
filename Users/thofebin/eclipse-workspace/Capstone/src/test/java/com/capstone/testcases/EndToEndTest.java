@@ -1,5 +1,6 @@
 package com.capstone.testcases;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -57,14 +58,39 @@ public class EndToEndTest extends BaseClass {
         
         paymentPage = addressPage.clickonUseAddrBtn();
         
-        paymentPage.cardSelection();
+        paymentPage.enterCvv("567");
         
-        paymentPage.addNewcard();
+        try {
+			Thread.sleep(7000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
         
-        paymentPage.addNewCardDetails();
+        paymentPage.useThisPayment();
         
-        paymentPage.finalCardAdd();
+        //paymentPage.billingAddress();
         
+        try {
+			Thread.sleep(7000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        
+        paymentPage.placeOrder();
+        
+        
+        try {
+			Thread.sleep(7000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        
+        boolean result = paymentPage.validateOtp();
+        
+        Assert.assertTrue(result);
         
         
 	}

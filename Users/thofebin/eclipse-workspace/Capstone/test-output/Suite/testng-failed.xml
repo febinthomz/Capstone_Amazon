@@ -6,21 +6,11 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.capstone.testcases.AccountPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="loadConfig"/>
-          <include name="wishListTest"/>
-          <include name="beforeSuite"/>
-          <include name="afterSuite"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.capstone.testcases.AccountPageTest -->
       <class name="com.capstone.testcases.SearchResultsPageTest">
         <methods>
           <include name="setup"/>
-          <include name="tearDown"/>
           <include name="loadConfig"/>
+          <include name="tearDown"/>
           <include name="beforeSuite"/>
           <include name="productAvailibilityTest" invocation-numbers="1"/>
           <include name="afterSuite"/>
@@ -36,21 +26,11 @@
           <include name="afterSuite"/>
         </methods>
       </class> <!-- com.capstone.testcases.AddToCartPageTest -->
-      <class name="com.capstone.testcases.EndToEndTest">
-        <methods>
-          <include name="endToEndTest"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="loadConfig"/>
-          <include name="beforeSuite"/>
-          <include name="afterSuite"/>
-        </methods>
-      </class> <!-- com.capstone.testcases.EndToEndTest -->
       <class name="com.capstone.testcases.LoginPageTest">
         <methods>
           <include name="setup"/>
           <include name="loadConfig"/>
-          <include name="loginTest" invocation-numbers="0 1"/>
+          <include name="loginTest" invocation-numbers="1"/>
           <include name="beforeSuite"/>
           <include name="tearDown"/>
           <include name="afterSuite"/>
